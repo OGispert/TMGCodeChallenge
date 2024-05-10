@@ -29,20 +29,25 @@ final class WeatherViewModel: ObservableObject {
     }
 
     @MainActor
-    func getWeatherForCity() async {
+    func getWeather() async {
         let cityCountry = inputText.appending(",\(selectedCountry.code)")
         let units: Units = unitSelected == 0 ? .imperial : .metric
         isLoading = true
 
+        if #available(iOS 16.0, *) {
+            // Not really required, but adds a nice loading animation.
+            // Also notice that this is safe, as
+            // it doesn't block the underlying thread,
+            // according to Apple's documentation.
+            do {
+                try await Task.sleep(for: .seconds(2))
+            } catch {
+                print(error)
+            }
+        }
+
         Task {
             do {
-                if #available(iOS 16.0, *) {
-                    // Not really required, but adds a nice loading animation.
-                    // Also notice that this is safe, as
-                    // it doesn't block the underlying thread,
-                    // according to Apple's documentation.
-                    try await Task.sleep(for: .seconds(2))
-                }
                 weather = try await networkHelper.fetchWeather(for: cityCountry, units: units)
                 if let icon = weather.weather?.first?.icon {
                     iconCode = icon

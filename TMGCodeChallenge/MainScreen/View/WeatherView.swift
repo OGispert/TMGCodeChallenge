@@ -29,6 +29,7 @@ struct WeatherView: View {
                 .font(.subheadline)
                 .accessibilityAddTraits(.isStaticText)
 
+            // Text field for the user to enter the city
             TextField(text: $viewModel.inputText) {
                 Text("Fort Worth")
             }
@@ -37,6 +38,7 @@ struct WeatherView: View {
             .accessibilityIdentifier("Text field")
             .keyboardType(.asciiCapable)
 
+            // Picker for the user to select the country
             Picker("Select a Country", selection: $viewModel.selectedCountry) {
                     ForEach(viewModel.countries, id: \.self) { country in
                         Text(country.name).tag(country)
@@ -49,6 +51,7 @@ struct WeatherView: View {
             HStack() {
                 Spacer()
 
+                // Picker to let the user select the Units (Fº or Cº)
                 Picker("Select a Unit", selection: $viewModel.unitSelected) {
                     Text("Fº").tag(0)
                     Text("Cº").tag(1)
@@ -61,29 +64,7 @@ struct WeatherView: View {
 
             Spacer().frame(height: 100)
 
-            Button("Get Current Weather") {
-                if viewModel.inputText.isEmpty {
-                    showNoInputAlert = true
-                } else if !network.connected {
-                    showNoConnectionAlert = true
-                } else {
-                    Task {
-                        await viewModel.getWeatherForCity()
-                        if viewModel.isError {
-                            showErrorAlert = true
-                        } else {
-                            isPresentingDetails = true
-                        }
-                    }
-                }
-            }
-            .padding()
-            .foregroundColor(.blue)
-            .background(
-                RoundedRectangle(cornerRadius: 20, style: .continuous)
-                    .fill(.blue.opacity(0.2))
-            )
-            .accessibilityAddTraits(.isButton)
+            createButton()
 
             Spacer()
         }
@@ -109,7 +90,7 @@ struct WeatherView: View {
             }
         }
         .fullScreenCover(isPresented: $isPresentingDetails) {
-            DetailsView(weather: viewModel.weather, iconCode: viewModel.iconCode)
+            DetailsView(viewModel: viewModel)
         }
         .alert("There is no information available. Please make sure the City and Country are correct and try again.", isPresented: $showErrorAlert) {
             Button("OK", role: .cancel) { }
@@ -122,7 +103,34 @@ struct WeatherView: View {
         }
     }
 
-    func hideKeyboard() {
+    private func createButton() -> some View {
+        Button("Get Current Weather") {
+            if viewModel.inputText.isEmpty {
+                showNoInputAlert = true
+            } else if !network.connected {
+                showNoConnectionAlert = true
+            } else {
+                Task {
+                    await viewModel.getWeather()
+                    if viewModel.isError {
+                        showErrorAlert = true
+                    } else {
+                        isPresentingDetails = true
+                    }
+                }
+            }
+        }
+        .padding()
+        .foregroundColor(.blue)
+        .background(
+            RoundedRectangle(cornerRadius: 20, style: .continuous)
+                .fill(.blue.opacity(0.2))
+        )
+        .accessibilityAddTraits(.isButton)
+    }
+    
+    /// Dismisses the keyboard if the user taps ourside the textField
+    private func hideKeyboard() {
         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }
