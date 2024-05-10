@@ -15,7 +15,7 @@ enum Units: String {
 struct NetworkHelper: NetworkMaker {
     private let session: URLSessionProtocol
     private let baseURL = "https://api.openweathermap.org/"
-    private let keyComponent = "&APPID=40058ed9fcb02875ffb5a14019521018"
+    private let keyComponent = "&APPID=ADD_YOUR_WEATHER_TOKEN_HERE"
 
     init(session: URLSessionProtocol = URLSession.shared) {
         self.session = session

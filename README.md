@@ -15,6 +15,12 @@ I also included a network helper, using protocol oriented programing, and depend
 - Minimun deployment target: iOS 15 (according to requirements)
 
 
+## TO RUN
+
+- Go to NetworkHekper.swift, line 18, and add your Weather API token.
+- Build.
+
+
 ## Console log
 I am getting the following console warning:
 
