@@ -11,7 +11,10 @@ import SwiftUI
 struct TMGCodeChallengeApp: App {
     var body: some Scene {
         WindowGroup {
-            WeatherView()
+            let url = Bundle.main.url(forResource: "response", withExtension: "json")
+            let data = try? Data(contentsOf: url!)
+            let model = try? JSONDecoder().decode(WeatherModel.self, from: data!)
+            WeatherView(viewModel: WeatherViewModel(weather: model!))
         }
     }
 }
