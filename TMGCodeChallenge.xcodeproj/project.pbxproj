@@ -15,16 +15,19 @@
 		C37622CD2BEEA28A00151F5E /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = C37622CB2BEEA28A00151F5E /* response.json */; };
 		C37622CF2BEEBB4B00151F5E /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37622CE2BEEBB4B00151F5E /* NetworkReachability.swift */; };
 		C37622D02BEEBB4B00151F5E /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37622CE2BEEBB4B00151F5E /* NetworkReachability.swift */; };
+		C37622D42BEEC3D000151F5E /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37622D22BEEC3D000151F5E /* MockURLSession.swift */; };
+		C37622D52BEEC3D000151F5E /* MockNetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37622D32BEEC3D000151F5E /* MockNetworkHelper.swift */; };
+		C37622D82BEEC4FF00151F5E /* NetworkHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37622D72BEEC4FF00151F5E /* NetworkHelperTests.swift */; };
+		C37622DB2BEEC70900151F5E /* WeatherViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37622DA2BEEC70900151F5E /* WeatherViewModelTests.swift */; };
 		C3BB46212BED3B0D0056162A /* TMGCodeChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB46202BED3B0D0056162A /* TMGCodeChallengeApp.swift */; };
 		C3BB46232BED3B0D0056162A /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB46222BED3B0D0056162A /* WeatherView.swift */; };
 		C3BB46252BED3B0E0056162A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3BB46242BED3B0E0056162A /* Assets.xcassets */; };
 		C3BB46282BED3B0E0056162A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3BB46272BED3B0E0056162A /* Preview Assets.xcassets */; };
-		C3BB46322BED3B0E0056162A /* TMGCodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB46312BED3B0E0056162A /* TMGCodeChallengeTests.swift */; };
 		C3BB463C2BED3B0E0056162A /* TMGCodeChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB463B2BED3B0E0056162A /* TMGCodeChallengeUITests.swift */; };
 		C3BB463E2BED3B0E0056162A /* TMGCodeChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB463D2BED3B0E0056162A /* TMGCodeChallengeUITestsLaunchTests.swift */; };
 		C3BB46542BED473D0056162A /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB46532BED473D0056162A /* WeatherModel.swift */; };
 		C3BB46562BED476D0056162A /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB46552BED476D0056162A /* WeatherViewModel.swift */; };
-		C3BB46592BED4DC30056162A /* NetworkHekper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB46582BED4DC30056162A /* NetworkHekper.swift */; };
+		C3BB46592BED4DC30056162A /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB46582BED4DC30056162A /* NetworkHelper.swift */; };
 		C3BB465B2BED4EDA0056162A /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB465A2BED4EDA0056162A /* NetworkError.swift */; };
 		C3BB465D2BED4F810056162A /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB465C2BED4F810056162A /* URLSession.swift */; };
 		C3BB465F2BED4FF40056162A /* NetworkMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB465E2BED4FF40056162A /* NetworkMaker.swift */; };
@@ -55,19 +58,22 @@
 		C37622C92BEE9CBE00151F5E /* Optional+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
 		C37622CB2BEEA28A00151F5E /* response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = response.json; sourceTree = "<group>"; };
 		C37622CE2BEEBB4B00151F5E /* NetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
+		C37622D22BEEC3D000151F5E /* MockURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		C37622D32BEEC3D000151F5E /* MockNetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNetworkHelper.swift; sourceTree = "<group>"; };
+		C37622D72BEEC4FF00151F5E /* NetworkHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelperTests.swift; sourceTree = "<group>"; };
+		C37622DA2BEEC70900151F5E /* WeatherViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModelTests.swift; sourceTree = "<group>"; };
 		C3BB461D2BED3B0D0056162A /* TMGCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMGCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3BB46202BED3B0D0056162A /* TMGCodeChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMGCodeChallengeApp.swift; sourceTree = "<group>"; };
 		C3BB46222BED3B0D0056162A /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		C3BB46242BED3B0E0056162A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3BB46272BED3B0E0056162A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C3BB462D2BED3B0E0056162A /* TMGCodeChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMGCodeChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3BB46312BED3B0E0056162A /* TMGCodeChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMGCodeChallengeTests.swift; sourceTree = "<group>"; };
 		C3BB46372BED3B0E0056162A /* TMGCodeChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMGCodeChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3BB463B2BED3B0E0056162A /* TMGCodeChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMGCodeChallengeUITests.swift; sourceTree = "<group>"; };
 		C3BB463D2BED3B0E0056162A /* TMGCodeChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMGCodeChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C3BB46532BED473D0056162A /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		C3BB46552BED476D0056162A /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
-		C3BB46582BED4DC30056162A /* NetworkHekper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHekper.swift; sourceTree = "<group>"; };
+		C3BB46582BED4DC30056162A /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		C3BB465A2BED4EDA0056162A /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		C3BB465C2BED4F810056162A /* URLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
 		C3BB465E2BED4FF40056162A /* NetworkMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMaker.swift; sourceTree = "<group>"; };
@@ -109,6 +115,32 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		C37622D12BEEC3B500151F5E /* MockFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C37622CB2BEEA28A00151F5E /* response.json */,
+				C37622D32BEEC3D000151F5E /* MockNetworkHelper.swift */,
+				C37622D22BEEC3D000151F5E /* MockURLSession.swift */,
+			);
+			path = MockFiles;
+			sourceTree = "<group>";
+		};
+		C37622D62BEEC4E300151F5E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C37622D72BEEC4FF00151F5E /* NetworkHelperTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C37622D92BEEC6E300151F5E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C37622DA2BEEC70900151F5E /* WeatherViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		C3BB46142BED3B0D0056162A = {
 			isa = PBXGroup;
 			children = (
@@ -136,7 +168,6 @@
 				C37622C22BEDE69800151F5E /* Extensions */,
 				C3BB46572BED4DA80056162A /* Network */,
 				C3BB464B2BED3DD70056162A /* MainScreen */,
-				C3BB464F2BED3E590056162A /* DetailsScreen */,
 				C3BB46242BED3B0E0056162A /* Assets.xcassets */,
 				C3BB46262BED3B0E0056162A /* Preview Content */,
 			);
@@ -154,8 +185,9 @@
 		C3BB46302BED3B0E0056162A /* TMGCodeChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				C37622CB2BEEA28A00151F5E /* response.json */,
-				C3BB46312BED3B0E0056162A /* TMGCodeChallengeTests.swift */,
+				C37622D12BEEC3B500151F5E /* MockFiles */,
+				C37622D62BEEC4E300151F5E /* Network */,
+				C37622D92BEEC6E300151F5E /* ViewModel */,
 			);
 			path = TMGCodeChallengeTests;
 			sourceTree = "<group>";
@@ -213,43 +245,12 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		C3BB464F2BED3E590056162A /* DetailsScreen */ = {
-			isa = PBXGroup;
-			children = (
-				C3BB46522BED3E7C0056162A /* Model */,
-				C3BB46512BED3E750056162A /* View */,
-				C3BB46502BED3E6E0056162A /* ViewModel */,
-			);
-			path = DetailsScreen;
-			sourceTree = "<group>";
-		};
-		C3BB46502BED3E6E0056162A /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		C3BB46512BED3E750056162A /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		C3BB46522BED3E7C0056162A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		C3BB46572BED4DA80056162A /* Network */ = {
 			isa = PBXGroup;
 			children = (
 				C3BB465C2BED4F810056162A /* URLSession.swift */,
 				C3BB465E2BED4FF40056162A /* NetworkMaker.swift */,
-				C3BB46582BED4DC30056162A /* NetworkHekper.swift */,
+				C3BB46582BED4DC30056162A /* NetworkHelper.swift */,
 				C3BB465A2BED4EDA0056162A /* NetworkError.swift */,
 				C37622CE2BEEBB4B00151F5E /* NetworkReachability.swift */,
 			);
@@ -395,7 +396,7 @@
 				C37622C42BEDE6B400151F5E /* View+Extensions.swift in Sources */,
 				C3BB46612BEDA25B0056162A /* CountryModel.swift in Sources */,
 				C3BB465D2BED4F810056162A /* URLSession.swift in Sources */,
-				C3BB46592BED4DC30056162A /* NetworkHekper.swift in Sources */,
+				C3BB46592BED4DC30056162A /* NetworkHelper.swift in Sources */,
 				C3BB46562BED476D0056162A /* WeatherViewModel.swift in Sources */,
 				C37622CF2BEEBB4B00151F5E /* NetworkReachability.swift in Sources */,
 				C3BB465B2BED4EDA0056162A /* NetworkError.swift in Sources */,
@@ -409,7 +410,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3BB46322BED3B0E0056162A /* TMGCodeChallengeTests.swift in Sources */,
+				C37622D42BEEC3D000151F5E /* MockURLSession.swift in Sources */,
+				C37622D82BEEC4FF00151F5E /* NetworkHelperTests.swift in Sources */,
+				C37622DB2BEEC70900151F5E /* WeatherViewModelTests.swift in Sources */,
+				C37622D52BEEC3D000151F5E /* MockNetworkHelper.swift in Sources */,
 				C37622D02BEEBB4B00151F5E /* NetworkReachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

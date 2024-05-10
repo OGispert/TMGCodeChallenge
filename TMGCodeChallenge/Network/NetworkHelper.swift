@@ -12,7 +12,7 @@ enum Units: String {
     case imperial
 }
 
-struct NetworkHekper: NetworkMaker {
+struct NetworkHelper: NetworkMaker {
     private let session: URLSessionProtocol
     private let baseURL = "https://api.openweathermap.org/"
     private let keyComponent = "&APPID=40058ed9fcb02875ffb5a14019521018"

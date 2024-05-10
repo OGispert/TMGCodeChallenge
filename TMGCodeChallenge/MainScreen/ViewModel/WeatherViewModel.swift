@@ -22,7 +22,7 @@ final class WeatherViewModel: ObservableObject {
 
     init(weather: WeatherModel,
          countries: [Country] = [],
-         networkHelper: NetworkMaker = NetworkHekper()) {
+         networkHelper: NetworkMaker = NetworkHelper()) {
         self.weather = weather
         self.countries = countries
         self.networkHelper = networkHelper
