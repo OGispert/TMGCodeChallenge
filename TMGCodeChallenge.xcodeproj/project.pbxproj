@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6430A1D92C18AF3C00195BE9 /* MainButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6430A1D82C18AF3C00195BE9 /* MainButtonStyle.swift */; };
 		C37622C12BEDD74A00151F5E /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37622C02BEDD74A00151F5E /* DetailsView.swift */; };
 		C37622C42BEDE6B400151F5E /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37622C32BEDE6B400151F5E /* View+Extensions.swift */; };
 		C37622C62BEE99FE00151F5E /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37622C52BEE99FE00151F5E /* Double+Extensions.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6430A1D82C18AF3C00195BE9 /* MainButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonStyle.swift; sourceTree = "<group>"; };
 		C37622C02BEDD74A00151F5E /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		C37622C32BEDE6B400151F5E /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		C37622C52BEE99FE00151F5E /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
@@ -105,6 +107,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6430A1DA2C18AFA400195BE9 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				6430A1D82C18AF3C00195BE9 /* MainButtonStyle.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
 		C37622C22BEDE69800151F5E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				C3BB464A2BED3DB80056162A /* TMG */,
+				6430A1DA2C18AFA400195BE9 /* ViewModifiers */,
 				C37622C22BEDE69800151F5E /* Extensions */,
 				C3BB46572BED4DA80056162A /* Network */,
 				C3BB464B2BED3DD70056162A /* MainScreen */,
@@ -394,6 +405,7 @@
 				C3BB46232BED3B0D0056162A /* WeatherView.swift in Sources */,
 				C37622C12BEDD74A00151F5E /* DetailsView.swift in Sources */,
 				C37622C42BEDE6B400151F5E /* View+Extensions.swift in Sources */,
+				6430A1D92C18AF3C00195BE9 /* MainButtonStyle.swift in Sources */,
 				C3BB46612BEDA25B0056162A /* CountryModel.swift in Sources */,
 				C3BB465D2BED4F810056162A /* URLSession.swift in Sources */,
 				C3BB46592BED4DC30056162A /* NetworkHelper.swift in Sources */,

@@ -120,13 +120,7 @@ struct WeatherView: View {
                 }
             }
         }
-        .padding()
-        .foregroundColor(.blue)
-        .background(
-            RoundedRectangle(cornerRadius: 20, style: .continuous)
-                .fill(.blue.opacity(0.2))
-        )
-        .accessibilityAddTraits(.isButton)
+        .mainButtonStyle()
     }
     
     /// Dismisses the keyboard if the user taps ourside the textField

@@ -15,11 +15,15 @@ extension View {
     /// - Returns: Either the original `View` or the modified `View` if the condition is `true`.
     /// Source: https://www.avanderlee.com/swiftui/conditional-view-modifier/
     @ViewBuilder
-    func `if`<Content: View>(_ condition: Bool, transform: (Self) -> Content) -> some View {
-        if condition {
+    func `if`<Content: View>(_ condition: @autoclosure () -> Bool, transform: (Self) -> Content) -> some View {
+        if condition() {
             transform(self)
         } else {
             self
         }
+    }
+
+    func mainButtonStyle() -> some View {
+        modifier(ButtonStyle())
     }
 }
